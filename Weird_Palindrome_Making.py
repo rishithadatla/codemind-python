@@ -1,13 +1,8 @@
-for t in range(int(input())):
-    n=int(input())
-    l=[int(k)for k in input().split()]
-    odd=0
-    for i in range(len(l)):
-        if l[i]%2==0:
-            pass
-        else:
-            odd+=1
-    if odd%2==0:
-        print(int(odd/2))
-    else:
-        print(int(odd//2))
+n=int(input())
+for i in range(0,n):
+    l=int(input())
+    lis=list(map(int,input().split()))
+    k=0
+    for i in lis:
+        k+=i%2
+    print(int(k/2))
